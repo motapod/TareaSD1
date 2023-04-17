@@ -123,8 +123,9 @@ async function getDataSinCache() {
             let endTime = performance.now();
             let executionTime = endTime - startTime;
             datosSinCache.push(executionTime);
+            console.log(executionTime);
         }
-        console.log(datosSinCache)
+       
     } catch (error) {
         console.log(error);
     }
@@ -167,8 +168,9 @@ async function getDataConCache() {
             let endTime = performance.now();
             let executionTime = endTime - startTime;
             datosCache.push(executionTime);
+            console.log(executionTime);
         }
-        console.log(datosCache)
+        
     } catch (error) {
         console.log(error);
     }
